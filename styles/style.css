@@ -32,7 +32,8 @@ h2 {margin:6px;
 text-align: center;}
 .inputBox{width:60px;
 text-align: center;
-display:inline;}
+display:inline;
+margin: 3px;}
 
 .square {
     margin: 3px;
@@ -48,6 +49,7 @@ color: white;}
 .buzz{ background:rgb(155, 155, 155)}
 .fizz{ background:rgb(194, 194, 194)}
 
+.btn{margin:3px;}
 
 .footer {text-align: center; 
     overflow: hidden;
