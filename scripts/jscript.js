@@ -1,6 +1,9 @@
 let el = document.getElementById('App');
 
 function clearDivs() {while ( el.firstChild ) el.removeChild( el.firstChild );}
+
+
+
 function main() {
 
 let divider1 = document.getElementById('divider1').value;
@@ -17,12 +20,9 @@ console.log( "x1 is a " + typeof(x1) + "; x2 is a " +  typeof(x2))
 if (x2< x1){
     alert("Min value should be lower than Max")
 
-}
+} else {clearDivs()}
 
-// let el = document.getElementById('App');
 
-// function clearDivs() {while ( el.firstChild ) el.removeChild( el.firstChild );}
-clearDivs()
 
 
 
@@ -41,9 +41,7 @@ clearDivs()
     }
 
 
-    const main = document.getElementById('App');
-    // main.innerHTML = '<p>Our elements will be here</p>';
-    // const a = document.getElementById('divider1').value;
+  
 
     for (i=x1;i<= x2;i++) {
         console.log(i)
@@ -56,7 +54,7 @@ clearDivs()
         myDiv.className += " square";
         // myDiv.className += " numbers";
         
-        main.appendChild(myDiv);
+       el.appendChild(myDiv);
   
     }
 
