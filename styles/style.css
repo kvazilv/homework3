@@ -31,7 +31,8 @@ h2 {margin:6px;
     justify-content: center;
 text-align: center;}
 .inputBox{width:60px;
-text-align: center;}
+text-align: center;
+display:inline;}
 
 .square {
     margin: 3px;
