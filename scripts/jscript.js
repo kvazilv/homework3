@@ -1,3 +1,6 @@
+let el = document.getElementById('App');
+
+function clearDivs() {while ( el.firstChild ) el.removeChild( el.firstChild );}
 function main() {
 
 let divider1 = document.getElementById('divider1').value;
@@ -11,11 +14,15 @@ console.log( x2 );
 console.log( "x1 is a " + typeof(x1) + "; x2 is a " +  typeof(x2))
 
 
+if (x2< x1){
+    alert("Min value should be lower than Max")
 
+}
 
-var el = document.getElementById('App');
+// let el = document.getElementById('App');
 
-while ( el.firstChild ) el.removeChild( el.firstChild );
+// function clearDivs() {while ( el.firstChild ) el.removeChild( el.firstChild );}
+clearDivs()
 
 
 

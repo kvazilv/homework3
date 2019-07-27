@@ -9,6 +9,8 @@
     <title>FizzBuzz</title>
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/jscript.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -17,21 +19,22 @@
     </header>
     <section class="display"></section>
     <div>
-        <h2>Change dividers</h2>
-        <input type="number" id="divider1" value="5" style="display:inline-block"><br>
-        <input type="number" id="divider2" value="3" style="display:inline-block"><br>
-        <!-- <button onclick="main()">Click me</button> -->
-        <h2>Change area </h2>
-<input type="number" id="x1" value="1" style="display:inline-block"><br>
-        <input type="number" id="x2" value="100" style="display:inline-block"><br>
-        <button onclick="main()">Update grid</button>
-
-
+        <div class="inputs">
+            <h2>Change dividers</h2>
+            <input class="inputBox" type="number" id="divider1" value="5" style="display:inline-block">
+            <input  class="inputBox" type="number" id="divider2" value="3" style="display:inline-block">
+            <!-- <button onclick="main()">Click me</button> -->
+            <h2>Change area </h2>
+            <input class="inputBox"  type="number" id="x1" value="1" style="display:inline-block">
+            <input class="inputBox" type="number" id="x2" value="100" style="display:inline-block">
+            <button onclick="main()">Update grid</button>
+            <button onclick="clearDivs()">Clear grid</button>
+        </div>
     </div>
     <main id="App">
 
     </main>
-    <footer>(C)2019</footer>
+    <footer class="footer">(C)2019</footer>
 </body>
 
 </html>

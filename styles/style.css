@@ -12,19 +12,46 @@
         height: 100px;
         display: inline-block;}
   } */
+
+  * {
+    font-family: 'Orbitron', sans-serif;
+  }
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+h1 {text-align: center;}
+h2 {margin:6px;
+    line-height: 0.8;
+}
+.inputs{ display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+text-align: center;}
+.inputBox{width:60px;
+text-align: center;}
 
 .square {
     margin: 3px;
     width: 100px;
     height: 100px;
-    display: inline-block;
-    background-color: rgb(101, 153, 153);
+    display: flex;
+    background-color: rgb(209, 209, 209);
+    align-items: center;
+    justify-content: center;
 }
-.fizzbuzz{ background:rgb(51, 124, 172)}
-.buzz{ background:rgb(57, 240, 11)}
-.fizz{ background:rgb(245, 96, 28)}
+.fizzbuzz{ background:rgb(0, 0, 0);
+color: white;}
+.buzz{ background:rgb(155, 155, 155)}
+.fizz{ background:rgb(194, 194, 194)}
+
+
+.footer {text-align: center; 
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    position: fixed; /* Set the navbar to fixed position */
+    bottom: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
