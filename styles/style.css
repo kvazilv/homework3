@@ -12,11 +12,19 @@
         height: 100px;
         display: inline-block;}
   } */
-main { display:flex;
-    flex-wrap:wrap;}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-  div {width: 100px;
+.square {
+    margin: 3px;
+    width: 100px;
     height: 100px;
     display: inline-block;
-background-color: rgb(101, 153, 153);
+    background-color: rgb(101, 153, 153);
 }
+.fizzbuzz{ background:rgb(51, 124, 172)}
+.buzz{ background:rgb(57, 240, 11)}
+.fizz{ background:rgb(245, 96, 28)}

@@ -1,33 +1,51 @@
 function main() {
 
-    function getText(value, n1 =5, n2=3) {
-        if( value %n1 ===0 &&  value %n2 ===0) return 'Fizzbuzz';
-        if (value %n1 ===0 ) return 'Buzz';
-        if (value %n2 ===0 ) return 'Fizz';
+let divider1 = document.getElementById('divider1').value;
+let divider2 = document.getElementById('divider2').value;
+let x1 = document.getElementById('x1').value;
+let x2 = document.getElementById('x2').value;
+console.log( divider1 );
+console.log( divider2 );
+console.log( x1 );
+console.log( x2 );
+
+
+
+var el = document.getElementById('App');
+
+while ( el.firstChild ) el.removeChild( el.firstChild );
+
+
+
+    function getText(value, a=5, b=3) {
+        if( value %a ===0 &&  value %b ===0) return 'Fizzbuzz';
+        if (value %a ===0 ) return 'Buzz';
+        if (value %b ===0 ) return 'Fizz';
         return value; 
     }
 
-    function getClass(value, n1 =5, n2=3) {
-        if( value %n1 ===0 &&  value %n2 ===0) return 'fizzbuzz';
-        if (value %n1 ===0 ) return 'buzz';
-        if (value %n2 ===0 ) return 'fizz';
+    function getClass(value, a=5, b=3) {
+        if( value %a ===0 &&  value %b ===0) return 'fizzbuzz';
+        if (value %a ===0 ) return 'buzz';
+        if (value %b ===0 ) return 'fizz';
         return "undividable"; 
     }
 
-    console.log("Starting Calculator");
 
     const main = document.getElementById('App');
     // main.innerHTML = '<p>Our elements will be here</p>';
-    // const n1 = document.getElementById('n1').value;
+    // const a = document.getElementById('divider1').value;
 
-    for (let i=1;i <= 100;i++) {
+    for (let i=x1;i<= x2;i++) {
+        console.log(i)
         const myDiv = document.createElement("div");
         // myDiv.innerText = i;
-        myDiv.innerText = getText(i);
-        myDiv.classList = getClass(i);
-        myDiv.id = "d"+i;
-        myDiv.className = "btn";
-        myDiv.className += " numbers";
+        myDiv.innerText = getText(i, divider1, divider2);
+        // myDiv.classList = getClass(i);
+        myDiv.id = " d "+i;
+        myDiv.className = getClass(i, divider1, divider2);
+        myDiv.className += " square";
+        // myDiv.className += " numbers";
         
         main.appendChild(myDiv);
   
