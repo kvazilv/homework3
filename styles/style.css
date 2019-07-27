@@ -1,0 +1,22 @@
+/* main {
+    display: grid;
+    grid-template: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px  / 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+} */
+
+/* @media (max-width: 576px){
+    main {
+        display: block;
+        max-width: 300px;
+    }
+    div {width: 100px;
+        height: 100px;
+        display: inline-block;}
+  } */
+main { display:flex;
+    flex-wrap:wrap;}
+
+  div {width: 100px;
+    height: 100px;
+    display: inline-block;
+background-color: rgb(101, 153, 153);
+}
