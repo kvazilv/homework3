@@ -6,8 +6,8 @@ function clearDivs() {while ( el.firstChild ) el.removeChild( el.firstChild );}
 
 function main() {
 
-let divider1 = document.getElementById('divider1').value;
-let divider2 = document.getElementById('divider2').value;
+let divider1 =  parseInt(document.getElementById('divider1').value);
+let divider2 =  parseInt(document.getElementById('divider2').value);
 let x1 = parseInt( document.getElementById('x1').value);
 let x2 =  parseInt( document.getElementById('x2').value);
 console.log( divider1 );

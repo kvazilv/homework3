@@ -36,7 +36,11 @@ text-align: center;
 display:inline;
 margin: 3px;}
 
-.square {
+.inlineDiv {display:inline;
+}
+
+.square {display:inline;
+
     margin: 3px;
     width: 100px;
     height: 100px;
