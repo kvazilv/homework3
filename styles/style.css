@@ -34,7 +34,9 @@ text-align: center;}
 .inputBox{width:60px;
 text-align: center;
 display:inline;
-margin: 3px;}
+margin: 3px;
+border-radius:5px;
+}
 
 .inlineDiv {display:inline;
 }
@@ -48,13 +50,14 @@ margin: 3px;}
     background-color: rgb(209, 209, 209);
     align-items: center;
     justify-content: center;
+    border-radius:10%;
 }
-.fizzbuzz{ background:rgb(0, 0, 0);
+.fizzbuzz{ background:rgb(0, 0, 0); border-radius:10%;
 color: white;}
-.buzz{ background:rgb(155, 155, 155)}
-.fizz{ background:rgb(194, 194, 194)}
+.buzz{ background:rgb(105, 105, 105); border-radius:10%; }
+.fizz{ background:rgb(160, 159, 159); border-radius:10%;}
 
-.btn{margin:3px;}
+.btn{margin:3px; border-radius:5px;}
 
 .footer {text-align: center; 
     overflow: hidden;
