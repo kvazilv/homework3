@@ -23,7 +23,7 @@ console.log( "div1 is a " + typeof(divider1) + "; div2 is a " +  typeof(divider2
 
 if (isNaN(divider1) || isNaN(divider2)  || isNaN(x1) || isNaN(x2) )
 {
-    alert("Enter a number please")
+    alert("Fizz/ Buzz / Min / Max should be numbers")
 }
 
 
