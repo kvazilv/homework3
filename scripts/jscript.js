@@ -22,6 +22,11 @@ if (x2< x1){
 
 } else {clearDivs()}
 
+if (typeof(x1) === "NaN" || typeof(x2)=== "NaN" || typeof(divider1)=== "NaN" ||typeof(divider2)=== "NaN" )
+{
+    alert("Enter a number please")
+
+} 
 
 
 

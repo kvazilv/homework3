@@ -51,13 +51,18 @@ border-radius:5px;
     align-items: center;
     justify-content: center;
     border-radius:10%;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
 }
-.fizzbuzz{ background:rgb(0, 0, 0); border-radius:10%;
+.fizzbuzz{ 
+    background:rgb(0, 0, 0); 
+    /* background-image: url("https://thumbs.gfycat.com/BriefIgnorantBlackbuck-size_restricted.gif");
+    background-position: 50%, 50%; */
+    border-radius:10%;
 color: white;}
 .buzz{ background:rgb(105, 105, 105); border-radius:10%; }
 .fizz{ background:rgb(160, 159, 159); border-radius:10%;}
 
-.btn{margin:3px; border-radius:5px;}
+.btn{margin:3px; border-radius:5px; box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);}
 
 .footer {text-align: center; 
     overflow: hidden;
