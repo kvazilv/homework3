@@ -6,6 +6,10 @@ function clearDivs() {while ( el.firstChild ) el.removeChild( el.firstChild );}
 
 function main() {
 
+
+console.log ("before parsing" + (typeof(document.getElementById('divider1').value)))
+
+
 let divider1 =  parseInt(document.getElementById('divider1').value);
 let divider2 =  parseInt(document.getElementById('divider2').value);
 let x1 = parseInt( document.getElementById('x1').value);
@@ -15,6 +19,12 @@ console.log( divider2 );
 console.log( x1 );
 console.log( x2 );
 console.log( "x1 is a " + typeof(x1) + "; x2 is a " +  typeof(x2))
+console.log( "div1 is a " + typeof(divider1) + "; div2 is a " +  typeof(divider2))
+
+if (isNaN(divider1) || isNaN(divider2)  || isNaN(x1) || isNaN(x2) )
+{
+    alert("Enter a number please")
+}
 
 
 if (x2< x1){
@@ -22,11 +32,7 @@ if (x2< x1){
 
 } else {clearDivs()}
 
-if (typeof(x1) === "NaN" || typeof(x2)=== "NaN" || typeof(divider1)=== "NaN" ||typeof(divider2)=== "NaN" )
-{
-    alert("Enter a number please")
 
-} 
 
 
 
@@ -49,7 +55,7 @@ if (typeof(x1) === "NaN" || typeof(x2)=== "NaN" || typeof(divider1)=== "NaN" ||t
   
 
     for (i=x1;i<= x2;i++) {
-        console.log(i)
+        // console.log(i)
         const myDiv = document.createElement("div");
         // myDiv.innerText = i;
         myDiv.innerText = getText(i, divider1, divider2);
