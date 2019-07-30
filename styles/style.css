@@ -13,36 +13,54 @@
         display: inline-block;}
   } */
 
-  * {
+* {
     font-family: 'Orbitron', sans-serif;
-  }
+}
+
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-h1 {text-align: center;
-    margin:12px;}
-h2 {margin:6px;
+
+h1 {
+    text-align: center;
+    margin: 12px;
+}
+
+h2 {
+    margin: 6px;
     font-size: 16px;
     line-height: 0.8;
 }
-.inputs{ display: flex;
-    flex-direction:column;
+
+.inputs {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-text-align: center;}
-.inputBox{width:60px;
-text-align: center;
-display:inline;
-margin: 3px;
-border-radius:5px;
+    text-align: center;
 }
 
-.inlineDiv {display:inline;
+.inputBox {
+    width: 60px;
+    text-align: center;
+    display: inline;
+    margin: 3px;
+    border-radius: 5px;
 }
 
-.square {display:inline;
+.inlineDiv {
+    display: inline;
+}
+
+.square {
+    display: inline;
+
+
+
+
+
 
     margin: 4px;
     width: 100px;
@@ -51,24 +69,63 @@ border-radius:5px;
     background-color: rgb(245, 245, 245);
     align-items: center;
     justify-content: center;
-    border-radius:10%;
-    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+    border-radius: 10%;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+
+    transition: transform .2s;
+    /* Animation */
 }
-.fizzbuzz{ 
-    background:rgb(0, 0, 0); 
+
+.square:hover {
+    transform: scale(0.9);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+
+
+
+
+
+
+div.fizzbuzz {
+
+
+
+    background: rgb(0, 0, 0);
     /* background-image: url("https://i.gifer.com/XJCI.gif"); */
     background-position: 50%, 50%;
-    border-radius:10%;
-color: white;}
-.buzz{ background:rgb(124, 124, 124); border-radius:10%; }
-.fizz{ background:rgb(189, 189, 189); border-radius:10%;}
+    border-radius: 10%;
+    color: white;
+}
 
-.btn{margin:3px; border-radius:5px; box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);}
 
-.footer {text-align: center; 
+
+
+.buzz {
+    background: rgb(124, 124, 124);
+    border-radius: 10%;
+}
+
+.fizz {
+    background: rgb(189, 189, 189);
+    border-radius: 10%;
+}
+
+.btn {
+    margin: 3px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+.footer {
+    text-align: center;
     overflow: hidden;
     background-color: rgb(255, 255, 255);
-    position: fixed; /* Set the navbar to fixed position */
-    bottom: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    position: fixed;
+    /* Set the navbar to fixed position */
+    bottom: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
 }

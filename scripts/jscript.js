@@ -34,7 +34,7 @@ function main() {
 
 
     function getText(value, a, b) {
-        if (value % a === 0 && value % b === 0) return 'Fizzbuzz';
+        if (value % a === 0 && value % b === 0) return 'Fizzbuzz' ;
         if (value % a === 0) return 'Buzz';
         if (value % b === 0) return 'Fizz';
         return value;
