@@ -66,7 +66,7 @@ h2 {
     border-radius: 10%;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
 
-    transition: transform .8s;
+    /* transition: transform .8s; */
     /* Animation */
 }
 
@@ -75,7 +75,7 @@ h2 {
 } */
 
 .square {
-    animation: movie 5s linear infinite;
+    animation: movie 3s linear infinite;
 }
 
 @keyframes movie {
@@ -89,7 +89,7 @@ h2 {
 }
 
 .square:nth-child(2n-1) {
-    animation: movie 8s linear infinite;
+    animation: movie 4s linear infinite;
     animation-delay: 1s;
 }
 
@@ -99,32 +99,38 @@ h2 {
 }
 
 .square:nth-child(3n) {
-    animation: movie 16s linear infinite;
-    animation-delay: 3s;
+    animation: movie 4s linear infinite;
+    animation-delay: -3s;
 }
 
 .square:nth-child(5n) {
-    animation: movie 10s linear infinite;
+    animation: movie 4s linear infinite;
     animation-delay: 5s;
 }
 
 .square:nth-child(7n) {
-    animation: movie 7s linear infinite;
-    animation-delay: 8s;
+    animation: movie 3s linear infinite;
+    animation-delay: -3s;
 }
 
 .square:nth-child(9n) {
     animation: movie 4s linear infinite;
-    animation-delay: 7s;
+    animation-delay: -4s;
 }
 .square:nth-child(11n) {
     animation: movie 3s linear infinite;
-    animation-delay: 7s;
+    animation-delay: -5s;
 }
 .square:nth-child(13n) {
     animation: movie 4s linear infinite;
-    animation-delay: 6s;
+    animation-delay: -6s;
 }
+
+.square:nth-child(14n) {
+    animation: movie 2s linear infinite;
+    animation-delay: -3s;
+}
+
 
 
 div.fizzbuzz {
